@@ -10,7 +10,7 @@ class MarketFilter extends React.Component {
             return (
                 <div className="card border-secondary mb-3" style={{textAlign: 'center'}}>
                     <div className="card-header">
-                        <div style={{textAlign: 'center'}}>Choose market</div>
+                        <div style={{textAlign: 'center'}}><b>Choose market</b></div>
                     </div>
                     <div className="card-body text-secondary">
 

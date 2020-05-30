@@ -24,8 +24,8 @@ const main = () => {
                     <p/>
                     <h5>You can find this app by the address
                         <p>
-                            <a href='https://github.com/razorsrider/react-test'>
-                                https://github.com/razorsrider/react-test
+                            <a href='https://github.com/razorsrider/react-state'>
+                                https://github.com/razorsrider/react-state
                             </a>
                         </p>
                     </h5>

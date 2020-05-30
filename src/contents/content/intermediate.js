@@ -7,7 +7,7 @@ class intermediate extends React.Component {
         if (Object.keys(this.props.pair_parameters).length) {
             return <div className="card border-secondary mb-3" style={{textAlign: 'center'}}>
                 <div className="card-header">
-                <div style={{textAlign: 'center'}}>Choose parameter</div>
+                    <div style={{textAlign: 'center'}}><b>Choose parameter</b></div>
                 </div>
                 <div className="card-body text-secondary">
                     <Parameters onClick={(a) => this.props.onClick(a)}

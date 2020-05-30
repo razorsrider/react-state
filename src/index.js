@@ -28,9 +28,9 @@ const App = () => {
                         <div className='col-xl-10 col-lg-10 col-sm-12 col-md-12 col-xs-12 col-12'>
 
                             <Switch>
-                                <Route path='/' exact component={main}/>
-                                <Route path='/data' exact component={content}/>
-                                <Route path='/about' exact component={about}/>
+                                <Route path='/react-state/' exact component={main}/>
+                                <Route path='/react-state/data' exact component={content}/>
+                                <Route path='/react-state/about' exact component={about}/>
                             </Switch>
 
                         </div>
