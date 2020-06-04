@@ -18,23 +18,22 @@ const Showed_value = (props) => {
 const Show_raw_info = (props) => {
     if (Object.keys(props.value).length) {
         return (
-            <div style={{textAlign: 'center', margin: '20px'}}>
 
+            <div style={{textAlign: 'center', margin: '20px'}}>
                 <p>
                     <button className="btn btn-warning" type="button" data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                            onClick={props.onClick}>
+                            onClick={null}>
                         Show raw JSON data
                     </button>
                 </p>
-
                 <div className="collapse" id="collapseExample">
                     <div className="card card-body">
                         {JSON.stringify(props.value)}
                     </div>
                 </div>
-
             </div>
+
         )
     } else {
         return null
@@ -49,8 +48,7 @@ class content extends React.Component {
         selected_parameter: 0,
         market_filter_list: [],
         market_filter_selected: 0,
-        showed_pairs: 0,
-        SHOW_RAW: false
+        showed_pairs: 0
     };
 
     retrieveSubmit = async arg => {
@@ -103,8 +101,8 @@ class content extends React.Component {
                     }}>Total <b>{Object.keys(this.state.pairs).length}</b> pairs</p>
 
 
-                    <Show_raw_info value={this.state.pairs}
-                                   onClick={() => this.state.SHOW_RAW ? this.setState({SHOW_RAW: false}) : this.setState({SHOW_RAW: true})}/>
+                    <Show_raw_info value={this.state.pairs}/>
+                    {/*onClick={() => this.state.SHOW_RAW ? this.setState({SHOW_RAW: false}) : this.setState({SHOW_RAW: true})}/>*/}
 
 
                     <Intermediate
@@ -128,8 +126,6 @@ class content extends React.Component {
             </div>
         </div>
     }
-
-
 }
 
 export default content;
